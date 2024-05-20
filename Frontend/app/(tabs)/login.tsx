@@ -7,13 +7,13 @@ export default function HomeScreen() {
     const [phoneNumber, setPhoneNumber] = useState('');
 
     const countryCodes = [
-        { label: '+84 - Vietnam', value: '+84' },
+        { label: '+84 - Hàn Quốc', value: '+84' },
         { label: '+82 - Hàn Quốc', value: '+82' },
-        { label: '+86 - Trung Quốc', value: '+86' },
-        { label: '+856 - Lào', value: '+856' },
-        { label: '+855 - Campuchia', value: '+855' },
-        { label: '+66 - Thái Lan', value: '+66' },
-        { label: '+62 - Indonesia', value: '+62' },
+        { label: '+86 - Hàn Quốc', value: '+86' },
+        { label: '+856 - Hàn Quốc', value: '+856' },
+        { label: '+855 - Hàn Quốc', value: '+855' },
+        { label: '+66 - Hàn Quốc Lan', value: '+66' },
+        { label: '+62 - Hàn Quốc', value: '+62' },
         { label: '+1 - Mỹ', value: '+1' },
         { label: '+44 - Anh', value: '+44' },
         { label: '+33 - Pháp', value: '+33' },
