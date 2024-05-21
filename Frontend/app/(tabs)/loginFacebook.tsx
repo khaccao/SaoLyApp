@@ -32,12 +32,27 @@ export default function Login() {
                         placeholderTextColor="#ccc"
                         keyboardType="email-address"
                     />
-                    <Text style={styles.inputLabel}>Năm sinh</Text>
-                    <TextInput
-                        style={styles.input}
-                        placeholderTextColor="#ccc"
-                        keyboardType="numeric"
-                    />
+                    <Text style={styles.inputLabel}>Ngày sinh</Text>
+                    <View style={styles.dateOfBirthContainer}>
+                        <TextInput
+                            style={[styles.input, styles.dateInput]}
+                            placeholder="Ngày"
+                            placeholderTextColor="#ccc"
+                            keyboardType="numeric"
+                        />
+                        <TextInput
+                            style={[styles.input, styles.dateInput]}
+                            placeholder="Tháng"
+                            placeholderTextColor="#ccc"
+                            keyboardType="numeric"
+                        />
+                        <TextInput
+                            style={[styles.input, styles.dateInput]}
+                            placeholder="Năm"
+                            placeholderTextColor="#ccc"
+                            keyboardType="numeric"
+                        />
+                    </View>
                     <Text style={styles.inputLabel}>Số điện thoại</Text>
                     <TextInput
                         style={styles.input}
@@ -106,6 +121,14 @@ const styles = StyleSheet.create({
         fontSize: 16,
         color: '#000',
         marginBottom: 20,
+    },
+    dateOfBirthContainer: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        marginBottom: 20,
+    },
+    dateInput: {
+        width: '30%',
     },
     registerButton: {
         backgroundColor: '#D1B37E',
